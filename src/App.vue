@@ -46,4 +46,13 @@ const filteredTodos = computed<Todo[]>(() => {
   }
   return todos.value
 }) 
+
+const remainingCount = computed<number>(() =>{
+  return todos.value.filter(t  => !t.completed). length
+})
 </script>
+<template>
+  <div class="todo-app">
+
+  </div>
+</template>
